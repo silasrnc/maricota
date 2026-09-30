@@ -12,7 +12,6 @@ export default function LoginPage() {
           <Image src="/brand/maricota-logo.png" alt="Maricota Doces Artesanais" width={66} height={66} className="brand-logo" loading="eager" />
           <span className="brand-word">gestão<span>confeitaria</span></span>
         </Link>
-        <Image src="/brand/maricota-logo-blue.png" alt="" width={320} height={320} className="login-logo-feature" />
         <div className="login-quote"><span className="quote-mark">“</span><p>Pequenos detalhes,<br />grandes momentos.</p><span className="quote-caption">UM DIA MAIS DOCE COMEÇA AQUI</span></div>
         <div className="login-ornament login-ornament-one">✿</div><div className="login-ornament login-ornament-two">✳</div>
         <div className="login-brand-bottom"><Heart size={13} fill="currentColor" /> feito com carinho</div>

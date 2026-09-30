@@ -34,13 +34,13 @@ a { color: inherit; text-decoration: none; }
 button { color: inherit; }
 
 .app-frame { min-height: 100vh; }
-.sidebar { position: fixed; z-index: 40; inset: 0 auto 0 0; display: flex; flex-direction: column; width: 248px; padding: 20px 18px 17px; background: var(--brand-sky); border-right: 1px solid #d4e8f0; }
+.sidebar { position: fixed; z-index: 40; inset: 0 auto 0 0; display: flex; flex-direction: column; width: 248px; padding: 20px 18px 17px; background: var(--brand-cream); border-right: 1px solid #eadfcc; }
 .brand-lockup { display: flex; align-items: center; gap: 10px; min-height: 40px; width: fit-content; }
 .brand-logo { display: block; width: 76px; height: 76px; flex: 0 0 auto; object-fit: contain; }
 .brand-mark { display: grid; place-items: center; width: 37px; height: 37px; border-radius: 14px 14px 14px 5px; background: #bd756a; color: white; transform: rotate(-2deg); }
 .brand-word { color: var(--brand-plum); font: 20px/1 'DM Serif Display', Georgia, serif; letter-spacing: -.4px; }
 .brand-word span { display: block; margin-top: 4px; color: #8d6573; font: 8px/1 'DM Sans', sans-serif; letter-spacing: 2.15px; text-transform: uppercase; }
-.workspace-card { display: flex; align-items: center; gap: 10px; margin: 23px 1px 28px; padding: 12px 10px; background: rgba(255,255,255,.64); border: 1px solid #d5e7ee; border-radius: 12px; }
+.workspace-card { display: flex; align-items: center; gap: 10px; margin: 23px 1px 28px; padding: 12px 10px; background: rgba(255,255,255,.64); border: 1px solid #eadfcc; border-radius: 12px; }
 .workspace-avatar { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px; background: #ead3c4; color: #8d5e52; font: 16px 'DM Serif Display', Georgia, serif; }
 .workspace-copy, .profile-copy { display: grid; gap: 3px; min-width: 0; flex: 1; }
 .workspace-copy strong, .profile-copy strong { overflow: hidden; color: #4b4038; font-size: 11px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
@@ -327,7 +327,6 @@ button { color: inherit; }
 .login-brand-panel { position: relative; display: flex; flex-direction: column; justify-content: space-between; min-height: 100vh; padding: 25px 8%; overflow: hidden; background: var(--brand-sky); }
 .login-brand { position: relative; z-index: 1; }
 .login-brand .brand-logo { width: 66px; height: 66px; }
-.login-logo-feature { position: absolute; top: 45%; left: 50%; z-index: 1; display: block; width: min(62%, 310px); height: auto; transform: translate(-50%, -50%); }
 .login-quote { position: relative; z-index: 1; padding: 0 0 40px 10%; }
 .quote-mark { display: block; height: 49px; color: var(--brand-pink); font: 75px/.85 'DM Serif Display', Georgia, serif; }
 .login-quote p { margin: 0 0 22px; color: var(--brand-plum); font: 38px/1.1 'DM Serif Display', Georgia, serif; }
@@ -513,7 +512,6 @@ button { color: inherit; }
   .expense-amount { min-width: 65px; }
   .login-screen { grid-template-columns: 1fr; }
   .login-brand-panel { min-height: 255px; padding: 21px 22px; }
-  .login-logo-feature { display: none; }
   .login-quote { padding: 25px 0 11px 5%; }
   .quote-mark { height: 26px; font-size: 47px; }
   .login-quote p { margin-bottom: 11px; font-size: 25px; }
