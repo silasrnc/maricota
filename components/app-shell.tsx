@@ -44,7 +44,7 @@ export function AppShell({ children, userEmail }: { children: React.ReactNode; u
       <button className={`mobile-scrim ${menuOpen ? "visible" : ""}`} onClick={closeMenu} aria-label="Fechar menu" />
       <aside className={`sidebar ${menuOpen ? "sidebar-open" : ""}`}>
         <Link href="/" className="brand-lockup" onClick={closeMenu}>
-          <Image src="/brand/maricota-logo.png" alt="Maricota Doces Artesanais" width={76} height={76} className="brand-logo" loading="eager" />
+          <Image src="/brand/maricota-logo-blue-small.png" alt="Maricota Doces Artesanais" width={76} height={76} className="brand-logo" loading="eager" />
           <span className="brand-word">gestão<span>confeitaria</span></span>
           <button className="mobile-close" type="button" onClick={(event) => { event.preventDefault(); closeMenu(); }} aria-label="Fechar menu"><X size={19} /></button>
         </Link>
