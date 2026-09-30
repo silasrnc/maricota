@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowUpRight, Check, Database, KeyRound, Sparkles } from "lucide-react";
+import Image from "next/image";
+import { ArrowUpRight, Check, Database, KeyRound } from "lucide-react";
 
 export function SetupNotice() {
   return (
@@ -7,7 +8,8 @@ export function SetupNotice() {
       <div className="setup-glow setup-glow-one" /><div className="setup-glow setup-glow-two" />
       <div className="setup-content">
         <Link className="brand-lockup setup-brand" href="/">
-          <span className="brand-mark"><Sparkles size={20} /></span><span className="brand-word">maricota<span>confeitaria</span></span>
+          <Image src="/brand/maricota-logo.png" alt="Maricota Doces Artesanais" width={76} height={76} className="brand-logo" loading="eager" />
+          <span className="brand-word">gestão<span>confeitaria</span></span>
         </Link>
         <div className="setup-eyebrow"><span /> SEU CANTINHO DE GESTÃO</div>
         <h1>Um começo doce<br /><em>para organizar tudo.</em></h1>

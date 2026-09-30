@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { LayoutDashboard, CakeSlice, Boxes, ReceiptText, ChartNoAxesCombined, Menu, X, LogOut, ChevronDown, Sparkles } from "lucide-react";
@@ -43,8 +44,8 @@ export function AppShell({ children, userEmail }: { children: React.ReactNode; u
       <button className={`mobile-scrim ${menuOpen ? "visible" : ""}`} onClick={closeMenu} aria-label="Fechar menu" />
       <aside className={`sidebar ${menuOpen ? "sidebar-open" : ""}`}>
         <Link href="/" className="brand-lockup" onClick={closeMenu}>
-          <span className="brand-mark"><CakeSlice size={21} strokeWidth={1.7} /></span>
-          <span className="brand-word">maricota<span>confeitaria</span></span>
+          <Image src="/brand/maricota-logo.png" alt="Maricota Doces Artesanais" width={76} height={76} className="brand-logo" loading="eager" />
+          <span className="brand-word">gestão<span>confeitaria</span></span>
           <button className="mobile-close" type="button" onClick={(event) => { event.preventDefault(); closeMenu(); }} aria-label="Fechar menu"><X size={19} /></button>
         </Link>
 
