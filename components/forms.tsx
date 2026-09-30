@@ -145,7 +145,14 @@ export function ProductForm({ ingredients }: { ingredients: Ingredient[] }) {
         <option value="">Selecione ingrediente ou material</option>{ingredients.map((item) => <option key={item.id} value={item.id}>{item.name} · {item.unit}</option>)}
       </select>
       <input aria-label="Quantidade na receita" type="number" min="0.001" step="0.001" placeholder="Quantidade" value={row.quantity} onChange={(event) => updateRow(index, "quantity", event.target.value)} />
-      <button type="button" className="icon-button subtle-button" onClick={() => setRecipe((current) => current.length > 1 ? current.filter((_, rowIndex) => rowIndex !== index) : [{ ingredient_id: "", quantity: "" })} aria-label="Remover item"><Trash2 size={16} /></button>
+      <button
+        type="button"
+        className="icon-button subtle-button"
+        onClick={() => setRecipe((current) => current.length > 1
+          ? current.filter((_, rowIndex) => rowIndex !== index)
+          : [{ ingredient_id: "", quantity: "" }])}
+        aria-label="Remover item"
+      ><Trash2 size={16} /></button>
     </div>) : <div className="field-wide inline-empty">Cadastre ingredientes ou materiais no estoque para montar a receita. Você ainda pode informar um custo direto adicional.</div>}
     {ingredients.length > 0 && <button className="link-button field-wide recipe-add" type="button" onClick={() => setRecipe((current) => [...current, { ingredient_id: "", quantity: "" }])}><Plus size={15} /> Adicionar item à receita</button>}
     <div className="field-wide cost-preview"><span>Custo atual estimado por formato</span><strong>{currency(totalUnitCost)}</strong><div className="price-suggestions"><div><span>Preço por markup · {markupPercent}%</span><strong>{currency(markupPrice)}</strong></div><div><span>Preço por margem · {targetMarginPercent}%</span><strong>{marginPrice === null ? "—" : currency(marginPrice)}</strong></div></div><small>O custo da receita acompanha o custo médio dos itens em estoque.</small></div>
